@@ -23,7 +23,7 @@ frappe.ui.form.on("Ride Booking Item", {
 	refresh(frm) {},
 	// field name in form on event on that field
 	distance(frm) {
-		// trigger fnhttps://phoenixerp.frappe.cloud/app/accounting-dimension
+		// trigger fn
 		frm.trigger("update_total_amount");
 	},
     // child table event refer frappe docs - https://frappeframework.com/docs/user/en/api/form#child-table-events
