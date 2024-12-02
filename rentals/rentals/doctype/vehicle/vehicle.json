@@ -12,7 +12,10 @@
   "year",
   "color",
   "insurance_expiry",
+  "summary",
+  "get_summary",
   "column_break_csiv",
+  "audit_completed",
   "model",
   "license_plate",
   "is_published",
@@ -99,13 +102,30 @@
    "fieldname": "condition",
    "fieldtype": "Rating",
    "label": "Condition"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "HTML",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "get_summary",
+   "fieldtype": "Button",
+   "label": "Get Summary"
+  },
+  {
+   "default": "0",
+   "fieldname": "audit_completed",
+   "fieldtype": "Check",
+   "label": "Audit Completed?",
+   "permlevel": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2024-11-01 22:22:43.376122",
+ "modified": "2024-11-28 11:41:20.407842",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
@@ -122,6 +142,14 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Vehicle Manager",
    "write": 1
   }
  ],
