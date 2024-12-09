@@ -10,6 +10,8 @@ app_license = "mit"
 
 # required_apps = []
 
+fixtures = [{"dt": "Vehicle Type", "filters": {"is_standard": 1}}]
+
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
@@ -143,9 +145,7 @@ doc_events = {
 	# 	"on_cancel": "method",
 	# 	"on_trash": "method"
 	# }
-    "ToDo": {
-        "before_insert": "rentals.rentals.api.throw_emoji"
-    }
+	"ToDo": {"before_insert": "rentals.rentals.api.throw_emoji"}
 }
 
 # Scheduled Tasks
@@ -246,4 +246,6 @@ doc_events = {
 # }
 
 
-website_route_rules = [{'from_route': '/portal/<path:app_path>', 'to_route': 'portal'},]
+website_route_rules = [
+	{"from_route": "/portal/<path:app_path>", "to_route": "portal"},
+]

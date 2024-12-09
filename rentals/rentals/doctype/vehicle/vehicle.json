@@ -16,6 +16,7 @@
   "get_summary",
   "column_break_csiv",
   "audit_completed",
+  "type",
   "model",
   "license_plate",
   "is_published",
@@ -119,13 +120,19 @@
    "fieldtype": "Check",
    "label": "Audit Completed?",
    "permlevel": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Vehicle Type"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2024-11-28 11:41:20.407842",
+ "modified": "2024-12-03 11:23:53.912351",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
